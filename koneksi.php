@@ -1,6 +1,6 @@
 <?php
-$servername = "localhost";
-$database = "fpaw";
+$servername = "localhost:4306";
+$database = "projectuaspi";
 $username = "root";
 $password = "";
 
