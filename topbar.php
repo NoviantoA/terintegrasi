@@ -3,7 +3,7 @@
     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
         <i class="fa fa-bars"></i>
     </button>
-    <h4>Data Warehouse AdventureWorks2022</h4>
+    <!--<h4>Data Warehouse AdventureWorks2022</h4>-->
     <!-- Topbar Navbar -->
     <ul class="navbar-nav ml-auto">
         <!-- Nav Item - User Information -->

@@ -12,13 +12,13 @@
     <hr class="sidebar-divider my-0">
 
     <!-- chart dwo-->
-    <li class="nav-item active">
+    <li class="nav-item">
         <a class="nav-link" href="dashboard.php">
             <i class="fas fa-solid fa-clipboard-list"></i>
             <span>Category</span></a>
     </li>
 
-    <li class="nav-item">
+    <li class="nav-item active">
         <a class="nav-link" href="item.php">
             <i class="fas fa-solid fa-box"></i>
             <span>Item</span></a>
