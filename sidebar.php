@@ -5,70 +5,31 @@
         <div class="sidebar-brand-icon rotate-n-15">
             <i class="fas fa-solid fa-bicycle"></i>
         </div>
-        <div class="sidebar-brand-text mx-1">Adventureworks</div>
+        <div class="sidebar-brand-text mx-1">MyCafe</div>
     </a>
 
     <!-- Divider -->
     <hr class="sidebar-divider my-0">
 
-    <!-- Nav Item - Dashboard -->
-    <li class="nav-item">
-        <a class="nav-link" href="index.php">
-            <i class="fas fa-solid fa-house-user"></i>
-            <span>Dashboard</span>
-        </a>
-    </li>
-
-    <!-- Divider -->
-    <hr class="sidebar-divider">
-
-    <!-- Heading -->
-    <div class="sidebar-heading">
-
-        Chart
-    </div>
-
     <!-- chart dwo-->
-    <li class="nav-item">
-        <a class="nav-link" href="product.php">
-            <i class="fas fa-solid fa-box"></i>
-            <span>Inventory</span></a>
+    <li class="nav-item active">
+        <a class="nav-link" href="dashboard.php">
+            <i class="fas fa-solid fa-clipboard-list"></i>
+            <span>Category</span></a>
     </li>
 
-    <li class="nav-item active">
+    <li class="nav-item">
         <a class="nav-link" href="sales.php">
-            <i class="fas fa-solid fa-chart-pie"></i>
-            <span>Sales</span></a>
+            <i class="fas fa-solid fa-box"></i>
+            <span>Item</span></a>
     </li>
 
     </li>
     <li class="nav-item">
 
         <a class="nav-link" href="purchase.php">
-            <i class="fas fa-solid fa-comment-dollar"></i>
-            <span>Purchase</span></a>
-    </li>
-
-    <!-- Divider -->
-    <hr class="sidebar-divider">
-
-    <!-- Heading -->
-    <div class="sidebar-heading">
-        Table
-    </div>
-
-    <!-- Nav Item - Pages Collapse Menu -->
-    <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-            <span>Information Table</span>
-        </a>
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-            <div class="bg-white py-2 collapse-inner rounded">
-                <a class="collapse-item" href="factInventory.php">factInventory</a>
-                <a class="collapse-item" href="factSales.php">factSales</a>
-                <a class="collapse-item" href="factPurchase.php">factPurchase</a>
-            </div>
-        </div>
+            <i class="fa-sharp fa-solid fa-basket-shopping-simple"></i>
+            <span>Order</span></a>
     </li>
 
     <!-- Divider -->
