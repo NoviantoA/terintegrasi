@@ -13,7 +13,7 @@
 
     <!-- chart dwo-->
     <li class="nav-item active">
-        <a class="nav-link" href="dashboard.php">
+        <a class="nav-link" href="tambahkategori.php">
             <i class="fas fa-solid fa-clipboard-list"></i>
             <span>Category</span></a>
     </li>
@@ -45,7 +45,7 @@
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <a class="collapse-item" href="datakategori.php">Data Kategori</a>
-                <a class="collapse-item" href="factSales.php">Data Item</a>
+                <a class="collapse-item" href="dataitem.php">Data Item</a>
                 <a class="collapse-item" href="factPurchase.php">Data Sales</a>
             </div>
         </div>
