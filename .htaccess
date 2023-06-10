@@ -1,3 +1,5 @@
 RewriteEngine On # Turn on the rewriting engine
 RewriteRule ^kategori/?$ kategori.php [NC,L]
 RewriteRule ^kategori/([0-9]+)/?$ kategori.php?id=$1 [NC,L]
+RewriteRule ^item/?$ kategori.php [NC,L]
+RewriteRule ^item/([0-9]+)/?$ kategori.php?id=$1 [NC,L]
