@@ -48,6 +48,7 @@
                                     $result = mysqli_query($mysqli, "Select i.itid kode,  i.name name, c.CatName kategori, itPrice price, i.itQty qty from itemtabel i JOIN categorytabel c on i.itCat= c.CatId ");
                                     while ($data = mysqli_fetch_array($result)) {
                                         echo "
+                                        <tr>
                                         <td>$data[name]</td>
                                         <td>$data[kategori]</td>
                                         <td>$data[price]</td>
@@ -55,7 +56,8 @@
                                         <td> 
                                         <a href='/integrasi/terintegrasi/edititem.php?id=$data[kode]' class='btn btn-warning '>Edit</a>
                                         <a href='/integrasi/terintegrasi/mysql/deleteitem.php?id=$data[kode]' class='btn btn-danger '>Hapus</a>
-                                        </td>                                        
+                                        </td>   
+                                        </tr>                                     
                                         ";
                                     }
 

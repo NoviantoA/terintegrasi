@@ -46,7 +46,7 @@
             <div class="bg-white py-2 collapse-inner rounded">
                 <a class="collapse-item" href="datakategori.php">Data Kategori</a>
                 <a class="collapse-item" href="dataitem.php">Data Item</a>
-                <a class="collapse-item" href="factPurchase.php">Data Sales</a>
+                <a class="collapse-item" href="dataorder.php">Data Sales</a>
             </div>
         </div>
     </li>

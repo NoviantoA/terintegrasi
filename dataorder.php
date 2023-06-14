@@ -32,40 +32,42 @@
                             <h6 class="m-0 font-weight-bold text-primary">Data Kategori</h6>
                         </div>
                         <div class="card-body">
-                            <table id="libTables" class="table table-striped table-bordered">
-                                <thead class="thead-dark">
+                            <table id="libTables" class="display">
+                                <thead>
                                     <tr>
-                                        <th>Produk</th>
-                                        <th>Kategori</th>
-                                        <th>Price</th>
-                                        <th>Qty</th>
-                                        <th>Action</th>
+                                        <th>Order ID</th>
+                                        <th>Ord Date</th>
+                                        <th>Ord Amt</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <?php
-                                    include "koneksi.php";
-                                    $result = mysqli_query($mysqli, "Select i.itid kode,  i.name name, c.CatName kategori, itPrice price, i.itQty qty from itemtabel i JOIN categorytabel c on i.itCat= c.CatId ");
-                                    while ($data = mysqli_fetch_array($result)) {
-                                        echo "
-                                        <tr>
-                                        <td>$data[name]</td>
-                                        <td>$data[kategori]</td>
-                                        <td>$data[price]</td>
-                                        <td>$data[qty]</td>
-                                        <td> 
-                                        <a href='/integrasi/terintegrasi/addbil.php?id=$data[kode]' class='btn btn-success '>Get</a>
-                                        </td>
-                                        </tr>                                        
-                                        ";
-                                    }
-
-                                    ?>
-
-
                                 </tbody>
                             </table>
                         </div>
+
+                        <script>
+                            $(document).ready(function() {
+                                $('#libTables').DataTable({
+                                    "processing": true,
+                                    "serverSide": true,
+                                    "ajax": {
+                                        "url": "./mysql/tampilorder.php", // Ganti dengan URL ke file server-side Anda
+                                        "type": "POST"
+                                    },
+                                    "deferRender": true,
+                                    "columns": [{
+                                            "data": "OrdId"
+                                        },
+                                        {
+                                            "data": "OrdDate"
+                                        },
+                                        {
+                                            "data": "OrdAmt"
+                                        }
+                                    ]
+                                });
+                            });
+                        </script>
 
                     </div>
                 </div>

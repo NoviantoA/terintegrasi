@@ -6,4 +6,5 @@ $itPrice = (int)$_POST['itPrice'];
 $itQty =  (int)$_POST['itQty'];
 
 $result = mysqli_query($mysqli, "update itemtabel set name='$name', itPrice='$itPrice', itQty='$itQty' where itId='$id'");
+$result = sqlsrv_query($kon, "UPDATE  itemtabel set name='$name', itPrice='$itPrice', itQty='$itQty' where itId='$id'");
 header("location:../dataitem.php");
